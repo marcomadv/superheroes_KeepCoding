@@ -20,6 +20,7 @@
 		A92040C72AC0B7F900979EE9 /* HeroesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92040C52AC0B7F900979EE9 /* HeroesCell.swift */; };
 		A92040C82AC0B7F900979EE9 /* HeroesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92040C62AC0B7F900979EE9 /* HeroesCell.xib */; };
 		A92040CD2AC2051B00979EE9 /* HeroeAndTransformationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92040CC2AC2051B00979EE9 /* HeroeAndTransformationProtocol.swift */; };
+		A93F06312AC3618E00BC810D /* heroes.json in Resources */ = {isa = PBXBuildFile; fileRef = A93F06302AC3618E00BC810D /* heroes.json */; };
 		A9C319D82ABB59A000634818 /* Transformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C319D72ABB59A000634818 /* Transformation.swift */; };
 		A9C319DC2ABC39B900634818 /* LocalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C319DB2ABC39B900634818 /* LocalDataModel.swift */; };
 		A9C319E42ABC47A800634818 /* SuperHeroesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C319E32ABC47A800634818 /* SuperHeroesTests.swift */; };
@@ -58,6 +59,7 @@
 		A92040C52AC0B7F900979EE9 /* HeroesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCell.swift; sourceTree = "<group>"; };
 		A92040C62AC0B7F900979EE9 /* HeroesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesCell.xib; sourceTree = "<group>"; };
 		A92040CC2AC2051B00979EE9 /* HeroeAndTransformationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeAndTransformationProtocol.swift; sourceTree = "<group>"; };
+		A93F06302AC3618E00BC810D /* heroes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heroes.json; sourceTree = "<group>"; };
 		A9C319D72ABB59A000634818 /* Transformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformation.swift; sourceTree = "<group>"; };
 		A9C319DB2ABC39B900634818 /* LocalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataModel.swift; sourceTree = "<group>"; };
 		A9C319E12ABC47A800634818 /* SuperHeroesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperHeroesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +178,7 @@
 		A9C319E22ABC47A800634818 /* SuperHeroesTests */ = {
 			isa = PBXGroup;
 			children = (
+				A93F06302AC3618E00BC810D /* heroes.json */,
 				A9C319E32ABC47A800634818 /* SuperHeroesTests.swift */,
 				A9C319EA2ABC4A0800634818 /* NetworkModelTests.swift */,
 			);
@@ -302,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93F06312AC3618E00BC810D /* heroes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +476,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6SZ9MGTL76;
+				DEVELOPMENT_TEAM = D35BGERC28;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SuperHeroes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -484,7 +488,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.adsilva.SuperHeroes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcomadev.SuperHeroes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -499,7 +503,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6SZ9MGTL76;
+				DEVELOPMENT_TEAM = D35BGERC28;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SuperHeroes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -511,7 +515,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.adsilva.SuperHeroes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcomadev.SuperHeroes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -525,6 +529,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D35BGERC28;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcomadev.SuperHeroesTests;
@@ -542,6 +547,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D35BGERC28;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcomadev.SuperHeroesTests;

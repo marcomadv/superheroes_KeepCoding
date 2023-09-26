@@ -10,6 +10,7 @@ import XCTest
 
 final class NetworkModelTests: XCTestCase {
     private var sut: NetworkModel!
+    private let expectedToken = "Some Token"
     
     override func setUp() {
         super.setUp()
@@ -24,8 +25,9 @@ final class NetworkModelTests: XCTestCase {
         sut = nil
     }
     
+    
     func testLogin() {
-        let expectedToken = "Some Token"
+        
         let someUser = "SomeUser"
         let somePassword = "SomePassword"
         
@@ -40,7 +42,7 @@ final class NetworkModelTests: XCTestCase {
                 "Basic \(base64LoginString)"
             )
             
-            let data = try XCTUnwrap(expectedToken.data(using: .utf8))
+            let data = try XCTUnwrap(self.expectedToken.data(using: .utf8))
             let response = try XCTUnwrap(
                 HTTPURLResponse(
                     url: URL(string: "https://dragonball.keepcoding.education")!,
@@ -62,12 +64,57 @@ final class NetworkModelTests: XCTestCase {
                 return
             }
             
-            XCTAssertEqual(token, expectedToken)
+            XCTAssertEqual(token, self.expectedToken)
             expectation.fulfill()
         }
         
         wait(for: [expectation], timeout: 1)
     }
+    
+    func testGetHeroes() {
+        
+        let numHeroesExpected = 15
+
+        MockURLProtocol.requestHandler = { request in
+            
+            let path = Bundle(for: type(of: self)).path(forResource: "heroes", ofType: "json")
+            if path == nil {
+                XCTFail("Expected find heroes json file")
+            }
+            let url = URL.init(filePath: path!)
+            let data = try? Data.init(contentsOf: url)
+            XCTAssertNotNil(data, "Fail decoding heroes")
+            
+            XCTAssertEqual(request.httpMethod, "POST")
+            XCTAssertEqual(
+                request.value(forHTTPHeaderField: "Authorization"),
+                "Bearer \(self.expectedToken)"
+            )
+            let response = try XCTUnwrap(
+                HTTPURLResponse(
+                    url: URL(string: "https://dragonball.keepcoding.education")!,
+                    statusCode: 200,
+                    httpVersion: nil,
+                    headerFields: ["Content-Type": "application/json"]
+                )
+            )
+            return (response, data!)
+        }
+        
+        let expectation = expectation(description: "Got Heroes")
+        sut.getHeroes { result in
+            
+            switch result {
+            case .success(let heroes):
+                XCTAssertEqual(heroes.count, numHeroesExpected)
+                expectation.fulfill()
+            case.failure(let error):
+                debugPrint(error)                }
+        }
+        wait(for: [expectation], timeout: 1)
+    }
+    
+    
 }
 
 final class MockURLProtocol: URLProtocol {

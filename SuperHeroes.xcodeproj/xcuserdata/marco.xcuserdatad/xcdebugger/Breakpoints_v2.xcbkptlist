@@ -3,4 +3,117 @@
    uuid = "13CE2882-EE58-4DC6-B2E5-3E91824B864F"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9A396C5-1901-48C1-87B5-5CDE7B83A0D3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SuperHeroesTests/NetworkModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "testLogin()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C9A396C5-1901-48C1-87B5-5CDE7B83A0D3 - 1393342f0dca35b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SuperHeroesTests.NetworkModelTests.testLogin() -&gt; ()"
+                  moduleName = "SuperHeroesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marco/Desktop/superheroes_KeepCoding/SuperHeroesTests/NetworkModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "1324">
+               </Location>
+               <Location
+                  uuid = "C9A396C5-1901-48C1-87B5-5CDE7B83A0D3 - 5cfc773527d5929c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.URLRequest) throws -&gt; (__C.NSHTTPURLResponse, Foundation.Data) in SuperHeroesTests.NetworkModelTests.testLogin() -&gt; ()"
+                  moduleName = "SuperHeroesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marco/Desktop/superheroes_KeepCoding/SuperHeroesTests/NetworkModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "576">
+               </Location>
+               <Location
+                  uuid = "C9A396C5-1901-48C1-87B5-5CDE7B83A0D3 - 5cfc773527d5929c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.URLRequest) throws -&gt; (__C.NSHTTPURLResponse, Foundation.Data) in SuperHeroesTests.NetworkModelTests.testLogin() -&gt; ()"
+                  moduleName = "SuperHeroesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marco/Desktop/superheroes_KeepCoding/SuperHeroesTests/NetworkModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "552">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "641724EE-12EB-4B65-87F3-FBE411875DD3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SuperHeroesTests/NetworkModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "testGetHeroes()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "641724EE-12EB-4B65-87F3-FBE411875DD3 - 13b8315aa91b38cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.URLRequest) throws -&gt; (__C.NSHTTPURLResponse, Foundation.Data) in SuperHeroesTests.NetworkModelTests.testGetHeroes() -&gt; ()"
+                  moduleName = "SuperHeroesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marco/Desktop/superheroes_KeepCoding/SuperHeroesTests/NetworkModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "1084">
+               </Location>
+               <Location
+                  uuid = "641724EE-12EB-4B65-87F3-FBE411875DD3 - 13b8315aa91b38cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.URLRequest) throws -&gt; (__C.NSHTTPURLResponse, Foundation.Data) in SuperHeroesTests.NetworkModelTests.testGetHeroes() -&gt; ()"
+                  moduleName = "SuperHeroesTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marco/Desktop/superheroes_KeepCoding/SuperHeroesTests/NetworkModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "1144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
