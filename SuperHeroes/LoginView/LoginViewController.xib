@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="SuperHeroes" customModuleProvider="target">
+            <connections>
+                <outlet property="Wallpaper" destination="dnW-sW-rq3" id="41F-65-4Jg"/>
+                <outlet property="passwordTextField" destination="tac-Mc-uO0" id="UJZ-rd-iar"/>
+                <outlet property="usernameTextField" destination="kOs-Ie-oY2" id="dfE-mM-l2s"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="dnW-sW-rq3" userLabel="Wallapaper">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="aRB-NX-9GQ"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="9xW-27-R0f">
+                    <rect key="frame" x="12" y="334" width="369" height="184"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PgU-5a-U3i">
+                            <rect key="frame" x="0.0" y="0.0" width="369" height="128"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username@email.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOs-Ie-oY2" userLabel="Username">
+                                    <rect key="frame" x="0.0" y="0.0" width="369" height="64"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="64" id="3XM-sX-r3d"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="email"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tac-Mc-uO0" userLabel="Password">
+                                    <rect key="frame" x="0.0" y="64" width="369" height="64"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="64" id="hfB-UY-lWa"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ep-RL-Sdz">
+                            <rect key="frame" x="0.0" y="140" width="369" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Mg5-Ef-F75"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Continuar">
+                                <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="20"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="continueTapped:" destination="-1" eventType="touchUpInside" id="4Qd-VE-Gh0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dnW-sW-rq3" secondAttribute="trailing" id="0je-tR-uVh"/>
+                <constraint firstItem="dnW-sW-rq3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EIV-mE-Xwf"/>
+                <constraint firstItem="dnW-sW-rq3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RVq-oG-Qzh"/>
+                <constraint firstItem="9xW-27-R0f" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Tc2-Ui-zX5"/>
+                <constraint firstItem="9xW-27-R0f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="fm9-B5-6Mo"/>
+                <constraint firstAttribute="bottom" secondItem="dnW-sW-rq3" secondAttribute="bottom" id="g6v-0z-oQE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dnW-sW-rq3" secondAttribute="trailing" id="tCV-fv-JY3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9xW-27-R0f" secondAttribute="trailing" constant="12" id="zdL-YW-Vna"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Wallpaper" width="1116" height="1941"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
