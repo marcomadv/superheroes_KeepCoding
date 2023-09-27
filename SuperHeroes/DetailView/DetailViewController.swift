@@ -46,14 +46,14 @@ class DetailViewController: UIViewController {
         guard let heroe = data as? Hero  else {
             return
         }
-        self.model.getTransformations(for: heroe) {[weak self] result in
+        self.model.getTransformations(for: heroe.id) {[weak self] result in
             DispatchQueue.main.async{
                 switch result {
-                case .success(let transformations):
+                case let .success(transformations):
                     self?.transformations.append(contentsOf: transformations)
                     self?.constraintHeightButton.constant = transformations.count > 0 ? 45.0 : 0.0
                     self?.transformationsButton.isHidden = transformations.count == 0
-                case .failure(let error):
+                case let .failure(error):
                     print("Error: \(error)")
                 }
             }

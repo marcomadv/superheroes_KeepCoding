@@ -54,8 +54,7 @@ extension PrincipalTableViewController: UITableViewDataSource {
         return data.count
         }
     
-    func tableView(
-        _ tableView: UITableView,
+    func tableView(_ tableView: UITableView,
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HeroesCell.identifier) as? HeroesCell

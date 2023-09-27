@@ -128,7 +128,7 @@ final class NetworkModel {
     }
 
     func getTransformations(
-        for hero: Hero,
+        for heroId: String,
         completion: @escaping (Result<[Transformation], NetworkError>) -> Void
     ){
         var components = baseComponents
@@ -145,7 +145,7 @@ final class NetworkModel {
         }
         
         var urlComponents = URLComponents()
-        urlComponents.queryItems = [URLQueryItem(name: "id", value: hero.id)]
+        urlComponents.queryItems = [URLQueryItem(name: "id", value: heroId)]
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
