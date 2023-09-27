@@ -22,6 +22,8 @@
 		A92040CD2AC2051B00979EE9 /* HeroeAndTransformationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92040CC2AC2051B00979EE9 /* HeroeAndTransformationProtocol.swift */; };
 		A93F06312AC3618E00BC810D /* heroes.json in Resources */ = {isa = PBXBuildFile; fileRef = A93F06302AC3618E00BC810D /* heroes.json */; };
 		A93F06332AC48E7200BC810D /* transformations.json in Resources */ = {isa = PBXBuildFile; fileRef = A93F06322AC48E7100BC810D /* transformations.json */; };
+		A93F06352AC497E800BC810D /* DetailDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93F06342AC497E800BC810D /* DetailDataProviderProtocol.swift */; };
+		A93F06372AC4A88D00BC810D /* DetailHeroProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93F06362AC4A88D00BC810D /* DetailHeroProvider.swift */; };
 		A9C319D82ABB59A000634818 /* Transformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C319D72ABB59A000634818 /* Transformation.swift */; };
 		A9C319DC2ABC39B900634818 /* LocalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C319DB2ABC39B900634818 /* LocalDataModel.swift */; };
 		A9C319E42ABC47A800634818 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C319E32ABC47A800634818 /* MockURLProtocol.swift */; };
@@ -62,6 +64,8 @@
 		A92040CC2AC2051B00979EE9 /* HeroeAndTransformationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeAndTransformationProtocol.swift; sourceTree = "<group>"; };
 		A93F06302AC3618E00BC810D /* heroes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heroes.json; sourceTree = "<group>"; };
 		A93F06322AC48E7100BC810D /* transformations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transformations.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		A93F06342AC497E800BC810D /* DetailDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDataProviderProtocol.swift; sourceTree = "<group>"; };
+		A93F06362AC4A88D00BC810D /* DetailHeroProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroProvider.swift; sourceTree = "<group>"; };
 		A9C319D72ABB59A000634818 /* Transformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformation.swift; sourceTree = "<group>"; };
 		A9C319DB2ABC39B900634818 /* LocalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataModel.swift; sourceTree = "<group>"; };
 		A9C319E12ABC47A800634818 /* SuperHeroesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperHeroesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +206,7 @@
 			children = (
 				EBF894CC2AC336AD00DE5F99 /* ListDataProviderProtocol.swift */,
 				A92040CC2AC2051B00979EE9 /* HeroeAndTransformationProtocol.swift */,
+				A93F06342AC497E800BC810D /* DetailDataProviderProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			children = (
 				EBF894CF2AC3377500DE5F99 /* HeroesDataProvider.swift */,
 				EBF894D12AC3382A00DE5F99 /* TransformationsDataProvider.swift */,
+				A93F06362AC4A88D00BC810D /* DetailHeroProvider.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -333,7 +339,9 @@
 				A92040CD2AC2051B00979EE9 /* HeroeAndTransformationProtocol.swift in Sources */,
 				575E88C12AB8C98A0032D71E /* NetworkModel.swift in Sources */,
 				EBF894CD2AC336AD00DE5F99 /* ListDataProviderProtocol.swift in Sources */,
+				A93F06352AC497E800BC810D /* DetailDataProviderProtocol.swift in Sources */,
 				577874EE2A9D41B40002F391 /* SceneDelegate.swift in Sources */,
+				A93F06372AC4A88D00BC810D /* DetailHeroProvider.swift in Sources */,
 				A9C319FE2ABEFA8E00634818 /* PrincipalTableViewController.swift in Sources */,
 				575E88C32AB8DDFA0032D71E /* Hero.swift in Sources */,
 			);

@@ -11,6 +11,7 @@ class HeroesDataPRovider: ListDataProviderProtocol {
     
     var title: String = "Heroes"
     private let model = NetworkModel()
+    
     func refreshData(completion: @escaping (([HeroeAndTransformationProtocol]) -> ())) {
         self.model.getHeroes { result in
             DispatchQueue.main.async {

@@ -69,8 +69,8 @@ extension PrincipalTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath
     ) {
-        let data = data[indexPath.row]
-        let detailViewController = DetailViewController(heroe: data)
+        let dataDetail = DetailHeroProvider.init(detailInfo: data[indexPath.row])
+        let detailViewController = DetailViewController(data: dataDetail)
         navigationController?.show(detailViewController, sender: nil)
         tableView.deselectRow(at: indexPath, animated: true)
     }

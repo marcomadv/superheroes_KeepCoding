@@ -7,48 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "76D0FED1-DC8B-421E-AD6A-9FE91E9A5820"
+            uuid = "D791CF90-8EF1-4F55-A4CF-1D16B7BCE5A5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SuperHeroesTests/NetworkModelTests.swift"
+            filePath = "SuperHeroes/Class/HeroesDataProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "testGetHeroes()"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "refreshData(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "773B70AD-C91A-4C8A-BC3C-3C918A01EC65"
+            uuid = "97C24DBD-C188-47E7-98CF-4980F86B17D7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SuperHeroesTests/NetworkModelTests.swift"
+            filePath = "SuperHeroes/Class/TransformationsDataProvider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "testGetTransformations()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "595BB405-CF10-43B8-9C86-6196181F724C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SuperHeroesTests/NetworkModelTests.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
-            landmarkName = "testGetTransformations()"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "refreshData(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

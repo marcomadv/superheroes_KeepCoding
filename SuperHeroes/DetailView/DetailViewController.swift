@@ -17,13 +17,14 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var heroeTextView: UITextView!
     @IBOutlet weak var constraintHeightButton: NSLayoutConstraint!
     
-    private let data: HeroeAndTransformationProtocol
+  //  private let data: HeroeAndTransformationProtocol
+    private let data: DetailDataProviderProtocol
     private let model = NetworkModel()
     private var transformations: [HeroeAndTransformationProtocol] = []
     
     // MARK: - Init
-    init(heroe: HeroeAndTransformationProtocol) {
-        self.data = heroe
+    init(data: DetailDataProviderProtocol) {
+        self.data = data
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -34,16 +35,16 @@ class DetailViewController: UIViewController {
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
-        heroeName.text = data.name
-        heroeImage.setImage(for: data.photo)
-        heroeTextView.text = data.description
+        heroeName.text = data.detailInfo.name
+        heroeImage.setImage(for: data.detailInfo.photo)
+        heroeTextView.text = data.detailInfo.description
         constraintHeightButton.constant = 0.0
         transformationsButton.isHidden = true
         checkTransformationsHeroe()
     }
     
     func checkTransformationsHeroe(){
-        guard let heroe = data as? Hero  else {
+        guard let heroe = data.detailInfo as? Hero  else {
             return
         }
         self.model.getTransformations(for: heroe.id) {[weak self] result in
@@ -59,6 +60,7 @@ class DetailViewController: UIViewController {
             }
         }
     }
+    
     @IBAction func navigateToTransformations(_ sender: Any) {
         let dataProvider = TransformationsDataPRovider(data: transformations)
         let navigateToTransformations = PrincipalTableViewController( dataProvider: dataProvider)
