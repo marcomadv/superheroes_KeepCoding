@@ -52,10 +52,10 @@ extension PrincipalTableViewController: UITableViewDataSource {
         numberOfRowsInSection section: Int
     ) -> Int {
         return data.count
-        }
+    }
     
     func tableView(_ tableView: UITableView,
-        cellForRowAt indexPath: IndexPath
+                   cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HeroesCell.identifier) as? HeroesCell
         let data = data[indexPath.row]
@@ -76,4 +76,4 @@ extension PrincipalTableViewController: UITableViewDelegate {
     }
 }
 
- 
+

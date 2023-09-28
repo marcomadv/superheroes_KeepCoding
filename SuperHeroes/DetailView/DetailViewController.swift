@@ -10,14 +10,14 @@ import UIKit
 class DetailViewController: UIViewController {
     
     // MARK: - Outlets
-   
+    
     @IBOutlet weak var heroeImage: UIImageView!
     @IBOutlet weak var heroeName: UILabel!
     @IBOutlet weak var transformationsButton: UIButton!
     @IBOutlet weak var heroeTextView: UITextView!
     @IBOutlet weak var constraintHeightButton: NSLayoutConstraint!
     
-  //  private let data: HeroeAndTransformationProtocol
+    //  private let data: HeroeAndTransformationProtocol
     private let data: DetailDataProviderProtocol
     private let model = NetworkModel()
     private var transformations: [HeroeAndTransformationProtocol] = []
