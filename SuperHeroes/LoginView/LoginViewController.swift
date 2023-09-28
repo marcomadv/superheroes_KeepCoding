@@ -19,8 +19,8 @@ class LoginViewController: UIViewController {
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
-        usernameTextField.text = "imarcoma@gmail.com"
-        passwordTextField.text = "012345"
+        usernameTextField.text = ""
+        passwordTextField.text = ""
     }
     // MARK: - Actions
     @IBAction func continueTapped(_ sender: Any) {
