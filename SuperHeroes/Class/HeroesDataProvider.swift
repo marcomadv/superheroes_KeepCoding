@@ -2,7 +2,7 @@
 //  HeroesDataProvider.swift
 //  SuperHeroes
 //
-//  Created by Pedro Muñoz Cabrera on 26/9/23.
+//  Created by Marco Muñoz on 26/9/23.
 //
 
 import Foundation
